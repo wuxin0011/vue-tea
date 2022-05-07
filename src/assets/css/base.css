@@ -1,0 +1,45 @@
+
+
+/* 背景色 */
+.bg-black{
+    background-color: black;
+}
+.bg-white{
+    background-color: white;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bg-orangered{
+    background-color: orangered;
+}
+
+
+/* flex布局 */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-text-thin{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.m-padding-top-44{
+    padding-top: 44px;
+}
+
+
+.cursor{
+    cursor:  pointer !important;
+}
