@@ -1,28 +1,29 @@
 <template>
-<div class="layout">
+  <div class="layout">
     <!-- 内容 -->
     <div class="main m-padding-top-44">
-        <router-view />
+      <router-view />
     </div>
     <!-- 底部导航 -->
     <Tabbar />
-</div>
+  </div>
 </template>
 
 <script>
 import Tabbar from "../components/common/Tabbar.vue";
+
 export default {
-    name: "Index",
-    components: {
-        Tabbar,
-    },
+  name: "Index",
+  components: {
+    Tabbar
+  }
 };
-Tabbar;
 </script>
 
 <style scoped>
 .layout {
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
 }
 </style>

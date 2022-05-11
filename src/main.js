@@ -6,9 +6,10 @@ import store from "./store";
 /* 引入bootstrap图标 */
 // https://icons.getbootstrap.com/
 
+// 样式清除
+import './assets/css/reset.css'
+// 首页样式
 import './assets/css/index.css'
-// 自定义样式
-import './assets/css/base.css'
 
 
 /* 全部异常捕获 */

@@ -2,7 +2,7 @@ const path = require('path')
 
 
 module.exports = {
-
+    lintOnSave:false,
     // 代理
    /*  devServer: {
         proxy: {

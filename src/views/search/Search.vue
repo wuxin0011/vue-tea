@@ -4,7 +4,7 @@
     <div class="search-history" v-if="historyList">
         <div class="history-header">
             <span> <i class="bi bi-clock"></i> 历史搜索</span>
-            <span @click="deleteHistory">清空历史</span>
+            <span @click="deleteHistory" class="cursor">清空历史</span>
         </div>
         <div class="history-list">
             <ul>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Header from "@/components/common/Header";
+import Header from "@/components/home/Header.vue";
 import {
     setStore,
     getStore,
@@ -80,4 +80,5 @@ export default {
     height: 30px;
     padding: 0 10px;
 }
+
 </style>

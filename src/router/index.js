@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Layout from "../layout/index.vue";
-import Home from "../views/Home.vue";
+import Home from "../views/home/Home.vue";
 
 Vue.use(VueRouter);
 
@@ -26,7 +26,7 @@ const routes = [{
       {
         path: "/category",
         name: "Category",
-        component: () => import("../views/Category.vue"),
+        component: () => import("../views/category/Category.vue"),
         meta:{
           title:'分类'
         }
@@ -34,7 +34,7 @@ const routes = [{
       {
         path: "/chat",
         name: "Chat",
-        component: () => import("../views/Chat.vue"),
+        component: () => import("../views/chat/Chat.vue"),
         meta:{
           title:'聊天'
         }
@@ -43,7 +43,7 @@ const routes = [{
         path: "/search",
         name: "Search",
         props: route => ({ keywords: route.query.keywords}),
-        component: () => import("../views/Search.vue"),
+        component: () => import("../views/search/Search.vue"),
         meta:{
           title:'搜索'
         }
@@ -51,7 +51,7 @@ const routes = [{
       {
         path: "/my",
         name: "My",
-        component: () => import("../views/My.vue"),
+        component: () => import("../views/me/My.vue"),
         meta:{
           title:'个人中心'
         }
@@ -62,7 +62,7 @@ const routes = [{
   {
     path: "*",
     name: "Error404",
-    component: () => import("../views/404.vue"),
+    component: () => import("../views/error/404.vue"),
     meta:{
       title:'Not Found'
     }
